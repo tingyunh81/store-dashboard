@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>門市結帳分析儀表板</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1117;--bg2:#171923;--bg3:#1e2230;--bg4:#252840;--border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.13);--text:#e8eaf0;--text2:#8b90a8;--text3:#555970;--accent:#6c8ef7;--accent3:#34d399;--warn:#f59e0b;--danger:#f87171;--r:10px;--rl:16px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Noto Sans TC',sans-serif;font-size:14px;min-height:100vh}
+.header{padding:18px 28px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.header h1{font-size:17px;font-weight:700;letter-spacing:.02em}
+.header p{font-size:12px;color:var(--text2);margin-top:3px;font-family:'DM Mono',monospace}
+.badge{background:var(--bg3);border:1px solid var(--border2);border-radius:20px;padding:5px 14px;font-size:11px;color:var(--accent);font-family:'DM Mono',monospace}
+.main{padding:18px 28px;display:flex;flex-direction:column;gap:16px}
+.filter-bar{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+.fg{display:flex;flex-direction:column;gap:6px}
+.fl{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text3)}
+.pr{display:flex;gap:5px;flex-wrap:wrap}
+.pill{padding:5px 12px;border-radius:20px;font-size:12px;border:1px solid var(--border2);background:transparent;color:var(--text2);cursor:pointer;transition:all .15s;font-family:'Noto Sans TC',sans-serif;white-space:nowrap}
+.pill:hover{border-color:var(--accent);color:var(--accent)}
+.pill.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
+.pill.wo{border-color:transparent;color:#fff;font-weight:500}
+.pill.wknd{color:#f87171;border-color:rgba(248,113,113,.35)}
+.pill.wknd:hover{border-color:#f87171}
+.pill.wknd.wo{background:#f87171}
+.date-range{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.date-range input[type="date"]{background:var(--bg3);border:1px solid var(--border2);color:var(--text);border-radius:8px;padding:5px 10px;font-size:12px;font-family:'DM Mono',monospace;cursor:pointer;outline:none}
+.date-range input[type="date"]:focus{border-color:var(--accent)}
+.date-range span{color:var(--text3);font-size:12px}
+.date-range button{padding:5px 14px;border-radius:8px;border:1px solid var(--accent);background:transparent;color:var(--accent);font-size:12px;cursor:pointer;font-family:'Noto Sans TC',sans-serif;transition:all .15s}
+.date-range button:hover{bckground:var(--accent);color:#fff}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:700px){.metrics{grid-template-columns:repeat(2,1fr)}}
