@@ -12,8 +12,7 @@
 body{background:var(--bg);color:var(--text);font-family:'Noto Sans TC',sans-serif;font-size:14px;min-height:100vh}
 #lockScreen{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:999}
 .lock-box{background:var(--bg2);border:1px solid var(--border2);border-radius:var(--rl);padding:40px;width:340px;text-align:center}
-.lock-box h2{font-size:18px;margin-bottom:8px}
-.lock-box p{font-size:12px;color:var(--text3);margin-bottom:24px;font-family:'DM Mono',monospace}
+.lock-box h2{font-size:18px;margin-bottom:8px}.lock-box p{font-size:12px;color:var(--text3);margin-bottom:24px;font-family:'DM Mono',monospace}
 .lock-box input{width:100%;background:var(--bg3);border:1px solid var(--border2);color:var(--text);border-radius:8px;padding:10px 14px;font-size:14px;outline:none;margin-bottom:12px}
 .lock-box input:focus{border-color:var(--accent)}
 .lock-box button{width:100%;background:var(--accent);border:none;color:#fff;border-radius:8px;padding:10px;font-size:14px;cursor:pointer;font-weight:500}
@@ -24,8 +23,7 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans TC',sans-seri
 @keyframes spin{to{transform:rotate(360deg)}}
 #mainApp{display:none}
 .header{padding:18px 28px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.header h1{font-size:17px;font-weight:700}
-.header p{font-size:12px;color:var(--text2);margin-top:3px;font-family:'DM Mono',monospace}
+.header h1{font-size:17px;font-weight:700}.header p{font-size:12px;color:var(--text2);margin-top:3px;font-family:'DM Mono',monospace}
 .badge{background:var(--bg3);border:1px solid var(--border2);border-radius:20px;padding:5px 14px;font-size:11px;color:var(--accent);font-family:'DM Mono',monospace}
 .main{padding:18px 28px;display:flex;flex-direction:column;gap:16px}
 .filter-bar{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
@@ -36,8 +34,7 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans TC',sans-seri
 .pill:hover{border-color:var(--accent);color:var(--accent)}
 .pill.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
 .pill.wo{border-color:transparent;color:#fff;font-weight:500}
-.pill.wknd{color:#f87171;border-color:rgba(248,113,113,.35)}
-.pill.wknd.wo{background:#f87171}
+.pill.wknd{color:#f87171;border-color:rgba(248,113,113,.35)}.pill.wknd.wo{background:#f87171}
 .date-range{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .date-range input[type="date"]{background:var(--bg3);border:1px solid var(--border2);color:var(--text);border-radius:8px;padding:5px 10px;font-size:12px;font-family:'DM Mono',monospace;cursor:pointer;outline:none}
 .date-range input[type="date"]:focus{border-color:var(--accent)}
@@ -60,8 +57,7 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans TC',sans-seri
 .ht th.sth{text-align:left;min-width:94px}
 .ht td{padding:4px 3px;text-align:center;font-size:12px;font-family:'DM Mono',monospace}
 .ht td.std{text-align:left;padding:4px 8px;font-weight:700;font-size:12px;font-family:'Noto Sans TC',sans-serif;white-space:nowrap}
-.ht tr.dr{border-bottom:1px solid var(--border)}
-.ht tr.tr td{border-top:1px solid var(--border2);padding-top:7px;color:var(--text2);font-weight:500}
+.ht tr.dr{border-bottom:1px solid var(--border)}.ht tr.tr td{border-top:1px solid var(--border2);padding-top:7px;color:var(--text2);font-weight:500}
 .cv{display:inline-block;min-width:26px;padding:3px;border-radius:4px;line-height:1.2}
 .crt{display:grid;grid-template-columns:1fr 1fr;gap:13px}
 @media(max-width:700px){.crt{grid-template-columns:1fr}}
@@ -70,36 +66,19 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans TC',sans-seri
 .dt th{padding:5px 7px;font-size:10px;font-weight:700;text-transform:uppercase;color:var(--text3);border-bottom:1px solid var(--border2);text-align:center;white-space:nowrap}
 .dt th:first-child,.dt th:nth-child(2){text-align:left}
 .dt td{padding:4px 7px;text-align:center;border-bottom:1px solid var(--border);font-family:'DM Mono',monospace}
-.dt td:first-child{text-align:left;color:var(--text2)}
-.dt td.z{color:var(--text3)}
-.dt tr.wk td{background:rgba(248,113,113,.04)}
-.dt tr.wk td:first-child{color:rgba(248,113,113,.7)}
+.dt td:first-child{text-align:left;color:var(--text2)}.dt td.z{color:var(--text3)}
+.dt tr.wk td{background:rgba(248,113,113,.04)}.dt tr.wk td:first-child{color:rgba(248,113,113,.7)}
 .dt tr.ttr td{border-top:1px solid var(--border2);border-bottom:none;color:var(--text2);font-weight:500;padding-top:7px}
 .wb{display:inline-block;padding:1px 7px;border-radius:10px;font-size:10px;font-family:'Noto Sans TC',sans-serif}
 .wb.wk{background:rgba(248,113,113,.15);color:#f87171}.wb.wd{background:rgba(108,142,247,.12);color:var(--accent)}
 select.ds{background:var(--bg3);border:1px solid var(--border2);color:var(--text);border-radius:8px;padding:5px 10px;font-size:12px;cursor:pointer;outline:none}
 .footer{padding:14px 28px;border-top:1px solid var(--border);text-align:center;font-size:11px;color:var(--text3);font-family:'DM Mono',monospace}
 ::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
-</style>
-</head>
-<body>
-<div id="lockScreen">
-  <div class="lock-box">
-    <h2>🔐 門市結帳分析儀表板</h2>
-    <p>請輸入存取密碼</p>
-    <input type="password" id="pwInput" placeholder="輸入密碼" onkeydown="if(event.key==='Enter')checkPw()">
-    <button onclick="checkPw()">進入</button>
-    <div class="lock-err" id="pwErr">密碼錯誤，請再試一次</div>
-  </div>
-</div>
-<div id="loadingScreen">
-  <div class="loading-box"><div class="spinner"></div><p>正在從資料庫載入資料...</p></div>
-</div>
+</style></head><body>
+<div id="lockScreen"><div class="lock-box"><h2>🔐 門市結帳分析儀表板</h2><p>請輸入存取密碼</p><input type="password" id="pwInput" placeholder="輸入密碼" onkeydown="if(event.key==='Enter')checkPw()"><button onclick="checkPw()">進入</button><div class="lock-err" id="pwErr">密碼錯誤，請再試一次</div></div></div>
+<div id="loadingScreen"><div class="loading-box"><div class="spinner"></div><p>正在從資料庫載入資料...</p></div></div>
 <div id="mainApp">
-  <div class="header">
-    <div><h1>門市結帳分析儀表板</h1><p>每小時結帳筆數 · 唯一訂單計算</p></div>
-    <span class="badge" id="periodBadge">載入中...</span>
-  </div>
+  <div class="header"><div><h1>門市結帳分析儀表板</h1><p>每小時結帳筆數 · 唯一訂單計算</p></div><span class="badge" id="periodBadge">載入中...</span></div>
   <div class="main">
     <div class="filter-bar">
       <div class="fg"><div class="fl">日期區間</div><div class="date-range"><input type="date" id="dateFrom"><span>～</span><input type="date" id="dateTo"><button onclick="applyDateRange()">套用</button><button onclick="resetDateRange()" style="border-color:var(--text3);color:var(--text3)">重設</button></div></div>
@@ -118,36 +97,57 @@ select.ds{background:var(--bg3);border:1px solid var(--border2);color:var(--text
   <div class="footer">資料來源：Google Sheets · 最後更新：<span id="lastUpdate">-</span> · 共 <span id="fTotal">-</span> 筆唯一訂單</div>
 </div>
 <script>
-const PASSWORD = 'lady2026';
-const SHEET_ID = '1cOut8ls4Cacn_0Swv_NkGJQz_yCw-otVw2_3rU8e1GE';
-const SHEET_NAME = '每日每小時結帳';
+const PASSWORD='lady2026';
+const SHEET_ID='1cOut8ls4Cacn_0Swv_NkGJQz_yCw-otVw2_3rU8e1GE';
+const SHEET_NAME='每日每小時結帳';
 function checkPw(){
-  const val=document.getElementById('pwInput').value;
-  if(val===PASSWORD){document.getElementById('lockScreen').style.display='none';document.getElementById('loadingScreen').style.display='flex';loadData();}
-  else{document.getElementById('pwErr').style.display='block';document.getElementById('pwInput').value='';document.getElementById('pwInput').focus();}
+  if(document.getElementById('pwInput').value===PASSWORD){
+    document.getElementById('lockScreen').style.display='none';
+    document.getElementById('loadingScreen').style.display='flex';
+    loadData();
+  } else {
+    document.getElementById('pwErr').style.display='block';
+    document.getElementById('pwInput').value='';
+  }
 }
 let RAW_DATA=[],STORES=[],globalMinDate='',globalMaxDate='';
+function parseDateStr(v){
+  if(!v)return null;
+  const s=String(v);
+  // Date(yyyy,m,d) format — month is 0-based
+  const m=s.match(/Date\((\d+),(\d+),(\d+)\)/);
+  if(m){
+    const yr=parseInt(m[1]),mo=parseInt(m[2]),dy=parseInt(m[3]);
+    return String(yr)+'-'+String(mo+1).padStart(2,'0')+'-'+String(dy).padStart(2,'0');
+  }
+  // yyyy-MM-dd format
+  if(/^\d{4}-\d{2}-\d{2}$/.test(s))return s;
+  return null;
+}
 async function loadData(){
   try{
     const url=`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(SHEET_NAME)}`;
     const resp=await fetch(url);
     const text=await resp.text();
     const json=JSON.parse(text.match(/google\.visualization\.Query\.setResponse\(([\s\S]*)\)/)[1]);
-    if(json.status!=='ok')throw new Error('Sheets error');
+    if(json.status!=='ok')throw new Error('Sheets error: '+json.status);
     RAW_DATA=[];
-    json.table.rows.forEach(row=>{
-      if(!row.c||!row.c[0]?.v)return;
+    json.table.rows.forEach(function(row){
+      if(!row.c||!row.c[0]||!row.c[0].v)return;
       const store=String(row.c[0].v).trim();
-      const dateStr=String(row.c[1].v).trim();
+      // 跳過標題列
+      if(store==='門市')return;
+      const dateStr=parseDateStr(row.c[1]?.v);
+      if(!dateStr)return;
       const weekDay=row.c[2]?.v?String(row.c[2].v).trim():'';
       const hours=[];
       for(let i=3;i<=15;i++)hours.push(Number(row.c[i]?.v)||0);
-      RAW_DATA.push([store,dateStr,weekDay,...hours]);
+      RAW_DATA.push([store,dateStr,weekDay].concat(hours));
     });
-    if(RAW_DATA.length===0)throw new Error('No data');
-    const dates=RAW_DATA.map(r=>r[1]).sort();
+    if(RAW_DATA.length===0)throw new Error('沒有資料，請先執行資料清洗');
+    const dates=RAW_DATA.map(function(r){return r[1];}).sort();
     globalMinDate=dates[0];globalMaxDate=dates[dates.length-1];
-    STORES=[...new Set(RAW_DATA.map(r=>r[0]))].sort();
+    STORES=[...new Set(RAW_DATA.map(function(r){return r[0];}))].sort();
     document.getElementById('dateFrom').value=globalMinDate;
     document.getElementById('dateTo').value=globalMaxDate;
     dateFrom=globalMinDate;dateTo=globalMaxDate;
@@ -156,7 +156,7 @@ async function loadData(){
     document.getElementById('mainApp').style.display='block';
     buildFilters();renderAll();
   }catch(err){
-    document.getElementById('loadingScreen').innerHTML=`<div class="loading-box"><p style="color:#f87171">❌ 資料載入失敗</p><p style="margin-top:8px;font-size:12px">${err.message}</p><p style="margin-top:8px;font-size:11px;color:#555970">請確認試算表已設為「知道連結的人可以檢視」</p></div>`;
+    document.getElementById('loadingScreen').innerHTML='<div class="loading-box"><p style="color:#f87171">❌ 資料載入失敗</p><p style="margin-top:8px;font-size:12px">'+err.message+'</p><p style="margin-top:8px;font-size:11px;color:#555970">請確認試算表已設為「知道連結的人可以檢視」，並已執行資料清洗</p></div>';
   }
 }
 const HOURS=[9,10,11,12,13,14,15,16,17,18,19,20,21];
@@ -165,19 +165,90 @@ const WD_IDX={'一':0,'二':1,'三':2,'四':3,'五':4,'六':5,'日':6};
 const SC={'SOGO復興':'#6c8ef7','北車微風':'#f59e0b','台北京站':'#34d399','新竹門市':'#a78bfa','板橋環球':'#fb923c','桃園A8':'#22d3ee','統一時代店':'#94a3b8'};
 let curStore='all',selWd=new Set(['all']),dateFrom='',dateTo='',barC,pieC,lineC;
 function gc(s){return SC[s]||'#6c8ef7';}
-function fd(){return RAW_DATA.filter(r=>{if(r[1]<dateFrom||r[1]>dateTo)return false;if(!selWd.has('all')&&!selWd.has(String(WD_IDX[r[2]])))return false;if(curStore!=='all'&&r[0]!==curStore)return false;return true;});}
+function fd(){return RAW_DATA.filter(function(r){if(r[1]<dateFrom||r[1]>dateTo)return false;if(!selWd.has('all')&&!selWd.has(String(WD_IDX[r[2]])))return false;if(curStore!=='all'&&r[0]!==curStore)return false;return true;});}
 function gas(){return curStore==='all'?STORES:[curStore];}
-function ght(rows){return HOURS.map((_,hi)=>rows.reduce((s,r)=>s+r[3+hi],0));}
-function gsht(st,rows){const sr=rows.filter(r=>r[0]===st);return HOURS.map((_,hi)=>sr.reduce((s,r)=>s+r[3+hi],0));}
+function ght(rows){return HOURS.map(function(_,hi){return rows.reduce(function(s,r){return s+r[3+hi];},0);});}
+function gsht(st,rows){var sr=rows.filter(function(r){return r[0]===st;});return HOURS.map(function(_,hi){return sr.reduce(function(s,r){return s+r[3+hi];},0);});}
 function applyDateRange(){dateFrom=document.getElementById('dateFrom').value;dateTo=document.getElementById('dateTo').value;renderAll();}
 function resetDateRange(){dateFrom=globalMinDate;dateTo=globalMaxDate;document.getElementById('dateFrom').value=globalMinDate;document.getElementById('dateTo').value=globalMaxDate;renderAll();}
-function renderMetrics(){const rows=fd(),ht=ght(rows),total=ht.reduce((a,b)=>a+b,0),pi=ht.indexOf(Math.max(...ht)),peakH=HOURS[pi],peakV=ht[pi],busy=ht.map((v,i)=>({v,h:HOURS[i]})).filter(x=>x.v>=peakV*.7),bb=busy.length?`${busy[0].h}:00 ─ ${busy[busy.length-1].h}:59`:'—',wdStr=selWd.has('all')?'全週':[...selWd].sort().map(w=>'週'+WD[+w]).join('、');document.getElementById('periodBadge').textContent=`${dateFrom} ～ ${dateTo}`;document.getElementById('fTotal').textContent=total.toLocaleString();document.getElementById('metrics').innerHTML=`<div class="metric"><div class="metric-label">結帳筆數</div><div class="metric-value ac">${total.toLocaleString()}</div><div class="metric-sub">${dateFrom} ～ ${dateTo}</div></div><div class="metric"><div class="metric-label">尖峰時段</div><div class="metric-value gr">${peakH}:00</div><div class="metric-sub">${peakV} 筆</div></div><div class="metric"><div class="metric-label">忙碌時段帶</div><div class="metric-value wa" style="font-size:13px">${bb}</div><div class="metric-sub">≥ 尖峰 70%</div></div><div class="metric"><div class="metric-label">${curStore==='all'?'篩選條件':'當前門市'}</div><div class="metric-value" style="font-size:14px">${curStore==='all'?'全部門市':curStore}</div><div class="metric-sub">${wdStr}</div></div>`;}
-function hBg(v,mx){if(!v)return'';const p=v/mx;return p<.33?`rgba(108,142,247,${.1+p*.5})`:p<.66?`rgba(245,158,11,${.2+p*.4})`:`rgba(248,113,113,${.3+p*.5})`;}
-function renderHeatmap(){const rows=fd(),sts=gas(),allD=sts.map(st=>gsht(st,rows)),mx=Math.max(...allD.flat(),1),wdStr=selWd.has('all')?'全週':[...selWd].sort().map(w=>'週'+WD[+w]).join('、');document.getElementById('heatSub').textContent=wdStr+' 合計 · '+dateFrom+'～'+dateTo;let h=`<thead><tr><th class="sth">門市</th>${HOURS.map(h=>`<th>${h}:00</th>`).join('')}<th>合計</th></tr></thead><tbody>`;sts.forEach((st,i)=>{const rd=allD[i],rt=rd.reduce((a,b)=>a+b,0);h+=`<tr class="dr"><td class="std" style="color:${gc(st)}">${st}</td>${rd.map(v=>`<td><span class="cv" style="background:${hBg(v,mx)};color:${v/mx>.5?'#fff':'var(--text)'}">${v}</span></td>`).join('')}<td style="color:var(--text2);font-weight:500">${rt}</td></tr>`;});const ht=ght(rows),gt=ht.reduce((a,b)=>a+b,0);h+=`<tr class="tr"><td class="std" style="color:var(--text3)">合計</td>${ht.map(v=>`<td>${v}</td>`).join('')}<td>${gt}</td></tr></tbody>`;document.getElementById('heatmap').innerHTML=h;}
-function renderCharts(){const rows=fd(),sts=gas(),ht=ght(rows),mx=Math.max(...ht,1),hl=HOURS.map(h=>`${h}:00`),gc2='rgba(255,255,255,.05)',tc='#555970';if(barC)barC.destroy();barC=new Chart(document.getElementById('barChart'),{type:'bar',data:{labels:hl,datasets:[{data:ht,backgroundColor:ht.map(v=>{const p=v/mx;return p>.66?'rgba(248,113,113,.8)':p>.33?'rgba(245,158,11,.75)':'rgba(108,142,247,.7)';}),borderRadius:4,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>` ${ctx.raw} 筆`}}},scales:{x:{ticks:{color:tc,font:{size:10}},grid:{display:false}},y:{ticks:{color:tc,font:{size:10}},grid:{color:gc2}}}}});if(pieC)pieC.destroy();const st2=STORES.map(st=>({st,v:gsht(st,rows).reduce((a,b)=>a+b,0)}));pieC=new Chart(document.getElementById('pieChart'),{type:'doughnut',data:{labels:st2.map(x=>x.st),datasets:[{data:st2.map(x=>x.v),backgroundColor:STORES.map(s=>gc(s)),borderWidth:2,borderColor:'#171923'}]},options:{responsive:true,maintainAspectRatio:false,cutout:'60%',plugins:{legend:{display:true,position:'right',labels:{color:tc,font:{size:11},padding:7,boxWidth:9}},tooltip:{callbacks:{label:ctx=>` ${ctx.label}: ${ctx.raw} 筆`}}}}});if(lineC)lineC.destroy();lineC=new Chart(document.getElementById('lineChart'),{type:'line',data:{labels:hl,datasets:sts.map(st=>({label:st,data:gsht(st,rows),borderColor:gc(st),backgroundColor:gc(st)+'22',borderWidth:2,pointRadius:3,tension:.35,fill:false}))},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{color:tc,font:{size:11},padding:10,boxWidth:9}},tooltip:{mode:'index',intersect:false}},scales:{x:{ticks:{color:tc,font:{size:10}},grid:{color:gc2}},y:{ticks:{color:tc,font:{size:10}},grid:{color:gc2}}}}});}
-function renderDetail(){const st=document.getElementById('detSt').value;if(!st)return;const rows=fd().filter(r=>r[0]===st),hl=HOURS.map(h=>`${h}:00`);let h=`<thead><tr><th>日期</th><th>星期</th>${hl.map(h=>`<th>${h}</th>`).join('')}<th>小計</th></tr></thead><tbody>`;let ct=new Array(HOURS.length).fill(0);rows.forEach(r=>{const wdi=WD_IDX[r[2]],isW=wdi>=5,vals=HOURS.map((_,i)=>r[3+i]),rt=vals.reduce((a,b)=>a+b,0);vals.forEach((v,i)=>ct[i]+=v);h+=`<tr class="${isW?'wk':''}"><td>${r[1]}</td><td><span class="wb ${isW?'wk':'wd'}">週${r[2]}</span></td>${vals.map(v=>`<td class="${v?'':'z'}">${v}</td>`).join('')}<td style="font-weight:500;color:var(--text2)">${rt}</td></tr>`;});const gt=ct.reduce((a,b)=>a+b,0);h+=`<tr class="ttr"><td colspan="2">合計</td>${ct.map(v=>`<td>${v}</td>`).join('')}<td style="font-weight:600">${gt}</td></tr></tbody>`;document.getElementById('detTable').innerHTML=h;}
-function buildFilters(){const sp=document.getElementById('storePills');sp.innerHTML='';[['all','全部'],...STORES.map(s=>[s,s])].forEach(([v,l])=>{const b=document.createElement('button');b.className='pill'+(v==='all'?' on':'');b.textContent=l;b.onclick=()=>{curStore=v;document.querySelectorAll('#storePills .pill').forEach(p=>p.classList.remove('on'));b.classList.add('on');renderAll();};sp.appendChild(b);});const wp=document.getElementById('wdPills');wp.innerHTML='';[['all','全部',false],...WD.map((n,i)=>[String(i),'週'+n,i>=5])].forEach(([v,l,isW])=>{const b=document.createElement('button');b.className='pill'+(v==='all'?' wo':'')+(isW?' wknd':'');if(v==='all')b.style.background='#6c8ef7';b.textContent=l;b.dataset.wd=v;b.onclick=()=>{if(v==='all'){selWd=new Set(['all']);document.querySelectorAll('#wdPills .pill').forEach(p=>{p.classList.remove('wo');p.style.background='';});b.classList.add('wo');b.style.background='#6c8ef7';}else{if(selWd.has('all')){selWd=new Set();const ab=document.querySelector('[data-wd="all"]');ab.classList.remove('wo');ab.style.background='';}if(selWd.has(v)){selWd.delete(v);b.classList.remove('wo');b.style.background='';}else{selWd.add(v);b.classList.add('wo');b.style.background=isW?'#f87171':'#6c8ef7';}if(!selWd.size){selWd=new Set(['all']);const ab=document.querySelector('[data-wd="all"]');ab.classList.add('wo');ab.style.background='#6c8ef7';}}renderAll();};wp.appendChild(b);});const ds=document.getElementById('detSt');ds.innerHTML='';STORES.forEach(s=>{const o=document.createElement('option');o.value=s;o.textContent=s;ds.appendChild(o);});ds.addEventListener('change',renderDetail);}
+function renderMetrics(){
+  var rows=fd(),ht=ght(rows),total=ht.reduce(function(a,b){return a+b;},0);
+  var pi=ht.indexOf(Math.max.apply(null,ht)),peakH=HOURS[pi],peakV=ht[pi];
+  var busy=ht.map(function(v,i){return{v:v,h:HOURS[i]};}).filter(function(x){return x.v>=peakV*.7;});
+  var bb=busy.length?(busy[0].h+':00 ─ '+busy[busy.length-1].h+':59'):'—';
+  var wdStr=selWd.has('all')?'全週':[...selWd].sort().map(function(w){return '週'+WD[+w];}).join('、');
+  document.getElementById('periodBadge').textContent=dateFrom+' ～ '+dateTo;
+  document.getElementById('fTotal').textContent=total.toLocaleString();
+  document.getElementById('metrics').innerHTML='<div class="metric"><div class="metric-label">結帳筆數</div><div class="metric-value ac">'+total.toLocaleString()+'</div><div class="metric-sub">'+dateFrom+' ～ '+dateTo+'</div></div><div class="metric"><div class="metric-label">尖峰時段</div><div class="metric-value gr">'+peakH+':00</div><div class="metric-sub">'+peakV+' 筆</div></div><div class="metric"><div class="metric-label">忙碌時段帶</div><div class="metric-value wa" style="font-size:13px">'+bb+'</div><div class="metric-sub">≥ 尖峰 70%</div></div><div class="metric"><div class="metric-label">'+(curStore==='all'?'篩選條件':'當前門市')+'</div><div class="metric-value" style="font-size:14px">'+(curStore==='all'?'全部門市':curStore)+'</div><div class="metric-sub">'+wdStr+'</div></div>';
+}
+function hBg(v,mx){if(!v)return'';var p=v/mx;return p<.33?'rgba(108,142,247,'+(0.1+p*0.5)+')':p<.66?'rgba(245,158,11,'+(0.2+p*0.4)+')':'rgba(248,113,113,'+(0.3+p*0.5)+')';}
+function renderHeatmap(){
+  var rows=fd(),sts=gas(),allD=sts.map(function(st){return gsht(st,rows);});
+  var mx=Math.max.apply(null,allD.reduce(function(a,b){return a.concat(b);}).concat([1]));
+  var wdStr=selWd.has('all')?'全週':[...selWd].sort().map(function(w){return '週'+WD[+w];}).join('、');
+  document.getElementById('heatSub').textContent=wdStr+' 合計 · '+dateFrom+'～'+dateTo;
+  var h='<thead><tr><th class="sth">門市</th>'+HOURS.map(function(h){return '<th>'+h+':00</th>';}).join('')+'<th>合計</th></tr></thead><tbody>';
+  sts.forEach(function(st,i){
+    var rd=allD[i],rt=rd.reduce(function(a,b){return a+b;},0);
+    h+='<tr class="dr"><td class="std" style="color:'+gc(st)+'">'+st+'</td>'+rd.map(function(v){return '<td><span class="cv" style="background:'+hBg(v,mx)+';color:'+(v/mx>.5?'#fff':'var(--text)')+'">'+v+'</span></td>';}).join('')+'<td style="color:var(--text2);font-weight:500">'+rt+'</td></tr>';
+  });
+  var ht=ght(rows),gt=ht.reduce(function(a,b){return a+b;},0);
+  h+='<tr class="tr"><td class="std" style="color:var(--text3)">合計</td>'+ht.map(function(v){return '<td>'+v+'</td>';}).join('')+'<td>'+gt+'</td></tr></tbody>';
+  document.getElementById('heatmap').innerHTML=h;
+}
+function renderCharts(){
+  var rows=fd(),sts=gas(),ht=ght(rows),mx=Math.max.apply(null,ht.concat([1]));
+  var hl=HOURS.map(function(h){return h+':00';}),gc2='rgba(255,255,255,.05)',tc='#555970';
+  if(barC)barC.destroy();
+  barC=new Chart(document.getElementById('barChart'),{type:'bar',data:{labels:hl,datasets:[{data:ht,backgroundColor:ht.map(function(v){var p=v/mx;return p>.66?'rgba(248,113,113,.8)':p>.33?'rgba(245,158,11,.75)':'rgba(108,142,247,.7)';}),borderRadius:4,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){return ' '+ctx.raw+' 筆';}}}},scales:{x:{ticks:{color:tc,font:{size:10}},grid:{display:false}},y:{ticks:{color:tc,font:{size:10}},grid:{color:gc2}}}}});
+  if(pieC)pieC.destroy();
+  var st2=STORES.map(function(st){return{st:st,v:gsht(st,rows).reduce(function(a,b){return a+b;},0)};});
+  pieC=new Chart(document.getElementById('pieChart'),{type:'doughnut',data:{labels:st2.map(function(x){return x.st;}),datasets:[{data:st2.map(function(x){return x.v;}),backgroundColor:STORES.map(function(s){return gc(s);}),borderWidth:2,borderColor:'#171923'}]},options:{responsive:true,maintainAspectRatio:false,cutout:'60%',plugins:{legend:{display:true,position:'right',labels:{color:tc,font:{size:11},padding:7,boxWidth:9}},tooltip:{callbacks:{label:function(ctx){return ' '+ctx.label+': '+ctx.raw+' 筆';}}}}}});
+  if(lineC)lineC.destroy();
+  lineC=new Chart(document.getElementById('lineChart'),{type:'line',data:{labels:hl,datasets:sts.map(function(st){return{label:st,data:gsht(st,rows),borderColor:gc(st),backgroundColor:gc(st)+'22',borderWidth:2,pointRadius:3,tension:.35,fill:false};})},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{color:tc,font:{size:11},padding:10,boxWidth:9}},tooltip:{mode:'index',intersect:false}},scales:{x:{ticks:{color:tc,font:{size:10}},grid:{color:gc2}},y:{ticks:{color:tc,font:{size:10}},grid:{color:gc2}}}}});
+}
+function renderDetail(){
+  var st=document.getElementById('detSt').value;if(!st)return;
+  var rows=fd().filter(function(r){return r[0]===st;}),hl=HOURS.map(function(h){return h+':00';});
+  var h='<thead><tr><th>日期</th><th>星期</th>'+hl.map(function(h){return '<th>'+h+'</th>';}).join('')+'<th>小計</th></tr></thead><tbody>';
+  var ct=new Array(HOURS.length).fill(0);
+  rows.forEach(function(r){
+    var wdi=WD_IDX[r[2]],isW=wdi>=5,vals=HOURS.map(function(_,i){return r[3+i];}),rt=vals.reduce(function(a,b){return a+b;},0);
+    vals.forEach(function(v,i){ct[i]+=v;});
+    h+='<tr class="'+(isW?'wk':'')+'"><td>'+r[1]+'</td><td><span class="wb '+(isW?'wk':'wd')+'">週'+r[2]+'</span></td>'+vals.map(function(v){return '<td class="'+(v?'':'z')+'">'+v+'</td>';}).join('')+'<td style="font-weight:500;color:var(--text2)">'+rt+'</td></tr>';
+  });
+  var gt=ct.reduce(function(a,b){return a+b;},0);
+  h+='<tr class="ttr"><td colspan="2">合計</td>'+ct.map(function(v){return '<td>'+v+'</td>';}).join('')+'<td style="font-weight:600">'+gt+'</td></tr></tbody>';
+  document.getElementById('detTable').innerHTML=h;
+}
+function buildFilters(){
+  var sp=document.getElementById('storePills');sp.innerHTML='';
+  [['all','全部']].concat(STORES.map(function(s){return[s,s];})).forEach(function(arr){
+    var v=arr[0],l=arr[1];
+    var b=document.createElement('button');b.className='pill'+(v==='all'?' on':'');b.textContent=l;
+    b.onclick=function(){curStore=v;document.querySelectorAll('#storePills .pill').forEach(function(p){p.classList.remove('on');});b.classList.add('on');renderAll();};
+    sp.appendChild(b);
+  });
+  var wp=document.getElementById('wdPills');wp.innerHTML='';
+  [['all','全部',false]].concat(WD.map(function(n,i){return[String(i),'週'+n,i>=5];})).forEach(function(arr){
+    var v=arr[0],l=arr[1],isW=arr[2];
+    var b=document.createElement('button');b.className='pill'+(v==='all'?' wo':'')+(isW?' wknd':'');
+    if(v==='all')b.style.background='#6c8ef7';b.textContent=l;b.dataset.wd=v;
+    b.onclick=function(){
+      if(v==='all'){selWd=new Set(['all']);document.querySelectorAll('#wdPills .pill').forEach(function(p){p.classList.remove('wo');p.style.background='';});b.classList.add('wo');b.style.background='#6c8ef7';}
+      else{
+        if(selWd.has('all')){selWd=new Set();var ab=document.querySelector('[data-wd="all"]');ab.classList.remove('wo');ab.style.background='';}
+        if(selWd.has(v)){selWd.delete(v);b.classList.remove('wo');b.style.background='';}
+        else{selWd.add(v);b.classList.add('wo');b.style.background=isW?'#f87171':'#6c8ef7';}
+        if(!selWd.size){selWd=new Set(['all']);var ab2=document.querySelector('[data-wd="all"]');ab2.classList.add('wo');ab2.style.background='#6c8ef7';}
+      }
+      renderAll();
+    };
+    wp.appendChild(b);
+  });
+  var ds=document.getElementById('detSt');ds.innerHTML='';
+  STORES.forEach(function(s){var o=document.createElement('option');o.value=s;o.textContent=s;ds.appendChild(o);});
+  ds.addEventListener('change',renderDetail);
+}
 function renderAll(){renderMetrics();renderHeatmap();renderCharts();renderDetail();}
-</script>
-</body>
-</html>
+</script></body></html>
